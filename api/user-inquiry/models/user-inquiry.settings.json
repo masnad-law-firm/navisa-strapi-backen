@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_inquiries",
+  "info": {
+    "name": "user-inquiry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
